@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AlertCircle, CheckCircle2, TriangleAlert } from "lucide-react";
+import { AlertCircle, CheckCircle2, AlertTriangle } from "lucide-react";
 
 const bancos = {
   "121": "Agibank",
@@ -76,7 +76,7 @@ export default function BoletoSeguro() {
                 <div>📅 Vencimento: <strong>{resultado.vencimento}</strong></div>
                 {resultado.alerta && (
                   <div className="flex items-center gap-2 text-yellow-600">
-                    <TriangleAlert size={20} /> {resultado.alerta}
+                    <AlertTriangle size={20} /> {resultado.alerta}
                   </div>
                 )}
               </div>
